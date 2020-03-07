@@ -1,0 +1,2 @@
+include ':app', ':locationkit'
+rootProject.name='SampleLocationKit'
