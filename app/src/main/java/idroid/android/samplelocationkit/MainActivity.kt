@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         locationService = HuaweiGoogleLocationManager(this)
 
+        if (!locationService.isLocationPermissionGranted()) locationService.requestLocationPermission()
+
         btnCurrentLocation.setOnClickListener {
             locationService.requestLocationUpdates(object : LocationListener {
                 override fun onLocationUpdate(currentLocation: Location) {
@@ -41,5 +43,13 @@ class MainActivity : AppCompatActivity() {
             })
         }
 
+        btnStopCurrentLocation.setOnClickListener {
+            locationService.removeLocationUpdates()
+        }
+    }
+
+    override fun onDestroy() {
+        locationService.removeLocationUpdates()
+        super.onDestroy()
     }
 }

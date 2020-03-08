@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Last Known Location"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnCurrentLocation"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,9 +22,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Current Location"
+        app:layout_constraintBottom_toTopOf="@+id/btnStopCurrentLocation"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLastKnownLocation" />
+
+    <Button
+        android:id="@+id/btnStopCurrentLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Current Location"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/btnLastKnownLocation" />
+        app:layout_constraintTop_toBottomOf="@id/btnCurrentLocation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
