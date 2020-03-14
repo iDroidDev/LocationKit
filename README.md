@@ -87,7 +87,6 @@ Interval parameter sets the rate in milliseconds at which your app prefers to re
     }
 ```
 
-
 ### If using our MapKit, you can use below code block for camera update
 ```
     mapView.onCreate(mapViewBundle)
@@ -115,6 +114,7 @@ Interval parameter sets the rate in milliseconds at which your app prefers to re
             }
         }
 ```
+**Our MapKit SDK link:** www.github.com/iDroidDev/MapKit
 
 
 # Authors
