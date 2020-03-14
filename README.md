@@ -1,4 +1,4 @@
-# MapKit SDK
+# LocationKit SDK
 
 This SDK includes Huawei Location and Google Location enhancements.Recently, with the release of Huawei App Gallery, many applications are performing location integration.
 
